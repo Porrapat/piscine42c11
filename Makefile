@@ -1,11 +1,13 @@
 .DEFAULT_GOAL := all
 norminette:
-	-norminette ./ex00/ft_strlen.c
-	-norminette ./ex01/ft_putstr.c
-	-norminette ./ex02/ft_putnbr.c
-	-norminette ./ex03/ft_atoi.c
-	-norminette ./ex04/ft_putnbr_base.c
-	-norminette ./ex05/ft_atoi_base.c
+	-norminette ./ex00/ft_foreach.c
+	-norminette ./ex01/ft_map.c
+	-norminette ./ex02/ft_any.c
+	-norminette ./ex03/ft_count_if.c
+	-norminette ./ex04/ft_is_sort.c
+#	-norminette ./ex05/ft_atoi_base.c
+	-norminette ./ex06/ft_atoi_base.c
+	-norminette ./ex07/ft_atoi_base.c
 
 compile: norminette
 	-gcc ./ex00/ft_strlen.c test_ex00_ft_strlen.c -Wall -Werror -Wextra -o test_ex00_ft_strlen
@@ -13,6 +15,8 @@ compile: norminette
 	-gcc ./ex02/ft_putnbr.c test_ex02_ft_putnbr.c -Wall -Werror -Wextra -o test_ex02_ft_putnbr
 	-gcc ./ex03/ft_atoi.c test_ex03_ft_atoi.c -Wall -Werror -Wextra -o test_ex03_ft_atoi
 	-gcc ./ex04/ft_putnbr_base.c test_ex04_ft_putnbr_base.c -Wall -Werror -Wextra -o test_ex04_ft_putnbr_base
+#	-gcc ./ex05/ft_atoi_base.c ./ex05/ft_strlen.c test_ex05_ft_atoi_base.c -Wall -Werror -Wextra -o test_ex05_ft_atoi_base
+	-gcc ./ex05/ft_atoi_base.c ./ex05/ft_strlen.c test_ex05_ft_atoi_base.c -Wall -Werror -Wextra -o test_ex05_ft_atoi_base
 	-gcc ./ex05/ft_atoi_base.c ./ex05/ft_strlen.c test_ex05_ft_atoi_base.c -Wall -Werror -Wextra -o test_ex05_ft_atoi_base
 
 build-sample: compile

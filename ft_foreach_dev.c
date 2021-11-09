@@ -1,46 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_map.c                                           :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/16 11:22:59 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/16 11:22:59 by ecaceres         ###   ########.fr       */
+/*   Created: 2019/08/16 11:11:48 by ecaceres          #+#    #+#             */
+/*   Updated: 2019/08/16 11:11:48 by ecaceres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 #include <stdlib.h>
+#include <unistd.h>
 
-int	*ft_map(int *tab, int length, int (*f)(int))
+void	x_ft_put_number(int number)
 {
-	int	index;
-	int	*results;
-
-	if (!(results = malloc(length * sizeof(int))))
-		return (NULL);
-	index = 0;
-	while (index < length)
-	{
-		results[index] = (*f)(tab[index]);
-		index++;
-	}
-	return (results);
+	if (number > 9)
+		x_ft_put_number(number / 10);
+	write(1, &"0123456789"[number % 10], 1);
 }
 
-int	ft_square(int number)
-{
-	return (number * number);
-}
+void	ft_foreach(int *tab, int length, void (*f)(int));
 
-int	main(void)
+int		main(void)
 {
 	int	index;
 	int	*tab;
 	int	length;
-	int	*results;
 
 	length = 10;
 	tab = malloc(length * sizeof(int));
@@ -50,11 +36,5 @@ int	main(void)
 		tab[index] = index;
 		index++;
 	}
-	results = ft_map(tab, length, &ft_square);
-	index = 0;
-	while (index < length)
-	{
-		printf("[mapped] square(%d) = %d\n", index, results[index]);
-		index++;
-	}
+	ft_foreach(tab, length, &x_ft_put_number);
 }
