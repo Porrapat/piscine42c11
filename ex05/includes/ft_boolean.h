@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/10 12:21:17 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/10 13:20:03 by ecaceres         ###   ########.fr       */
+/*   Created: 2021/11/09 23:52:59 by porrapat          #+#    #+#             */
+/*   Updated: 2021/11/09 23:53:55 by porrapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_BOOLEAN_H
 # define FT_BOOLEAN_H
 
-typedef enum {
+typedef enum s_bool {
 	false = 0,
 	true = 1
 }	t_bool;

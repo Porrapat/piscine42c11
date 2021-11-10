@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/18 16:15:37 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/18 16:15:37 by ecaceres         ###   ########.fr       */
+/*   Created: 2021/11/09 23:52:59 by porrapat          #+#    #+#             */
+/*   Updated: 2021/11/09 23:53:55 by porrapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ t_bool	ft_validate_operation(int b, char operator)
 
 void	ft_do_operation(int a, int b, char operator)
 {
-	static char	operators[5] = { '+', '-', '/', '*', '%' };
+	static char	operators[5] = {'+', '-', '/', '*', '%'};
 	static int	(*operations[5])(int, int) = {
 			&ft_operation_add,
 			&ft_operation_minus,
@@ -69,7 +69,7 @@ void	ft_do_operation(int a, int b, char operator)
 	ft_str_write("\n");
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int		a;
 	int		b;

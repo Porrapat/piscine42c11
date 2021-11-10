@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/17 12:21:42 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/17 12:21:42 by ecaceres         ###   ########.fr       */
+/*   Created: 2021/11/09 23:52:59 by porrapat          #+#    #+#             */
+/*   Updated: 2021/11/09 23:53:55 by porrapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_boolean.h"
 #include "ft_is.h"
 
-int		ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
 	int	result;
 	int	minus;
