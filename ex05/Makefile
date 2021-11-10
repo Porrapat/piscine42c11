@@ -42,7 +42,7 @@ norm :
 
 find_sources :
 	@find srcs -type f -name "*.c" | xargs -I{} echo ./{} | tr '\n' ' '
-	
+
 test : re
 	@echo "[$(C_YELLOW_B)TESTING$(C_RESET)] $(C_WHITE)Testing with empty$(C_RESET)" ;
 	@./${NAME} | cat -e ;
