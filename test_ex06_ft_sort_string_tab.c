@@ -35,7 +35,7 @@ int		main(void)
 	index = 0;
 	while (tab[index])
 	{
-		printf("tab[%d] <@ %p> = $%s$\n", index, tab + index, tab[index]);
+		printf("tab[%d] = $%s$\n", index, tab[index]);
 		index++;
 	}
 	ft_sort_string_tab(tab);
@@ -43,7 +43,7 @@ int		main(void)
 	index = 0;
 	while (tab[index])
 	{
-		printf("tab[%d] <@ %p> = $%s$\n", index, tab + index, tab[index]);
+		printf("tab[%d] = $%s$\n", index, tab[index]);
 		index++;
 	}
 }

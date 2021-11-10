@@ -1,0 +1,6 @@
+ft_is_sorted(1.........10) = 1
+ft_is_sorted(10.........1) = 1
+ft_is_sorted(10...100...1) = 0
+ft_is_sorted(10.....1.100) = 0
+ft_is_sorted(.tabx.......) = 1
+ft_is_sorted(.tabx.......) = 1

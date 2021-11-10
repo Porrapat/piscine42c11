@@ -1,0 +1,15 @@
+tab[0] = $hello$
+tab[1] = $world$
+tab[2] = $a$
+tab[3] = $aa$
+tab[4] = $ba$
+tab[5] = $ab$
+tab[6] = $z$
+
+tab[0] = $a$
+tab[1] = $aa$
+tab[2] = $ab$
+tab[3] = $ba$
+tab[4] = $hello$
+tab[5] = $world$
+tab[6] = $z$
