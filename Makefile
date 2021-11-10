@@ -14,8 +14,8 @@ compile: norminette
 	-gcc ./ex02/ft_any.c test_ex02_ft_any.c -Wall -Werror -Wextra -o test_ex02_ft_any
 	-gcc ./ex03/ft_count_if.c test_ex03_ft_count_if.c -Wall -Werror -Wextra -o test_ex03_ft_count_if
 	-gcc ./ex04/ft_is_sort.c test_ex04_ft_is_sort.c -Wall -Werror -Wextra -o test_ex04_ft_is_sort
-	-gcc ./ex06/ft_sort_string_tab.c ./ex05/ft_foreach.c test_ex06_ft_sort_string_tab.c -Wall -Werror -Wextra -o test_ex06_ft_sort_string_tab
-	-gcc ./ex07/ft_advanced_sort_string_tab.c ./ex05/ft_foreach.c test_ex07_ft_advanced_sort_string_tab.c -Wall -Werror -Wextra -o test_ex07_ft_sort_string_tab
+	-gcc ./ex06/ft_sort_string_tab.c test_ex06_ft_sort_string_tab.c -Wall -Werror -Wextra -o test_ex06_ft_sort_string_tab
+	-gcc ./ex07/ft_advanced_sort_string_tab.c test_ex07_ft_advanced_sort_string_tab.c -Wall -Werror -Wextra -o test_ex07_ft_advanced_sort_string_tab
 
 build-sample: compile
 	-./test_ex00_ft_foreach > result_sample_ex00_ft_foreach.txt

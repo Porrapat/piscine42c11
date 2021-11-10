@@ -13,21 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_count_if(char **tab, int length, int (*f)(char*))
-{
-	int	index;
-	int	count;
-
-	index = 0;
-	count = 0;
-	while (index < length)
-	{
-		if ((*f)(tab[index]) != 0)
-			count++;
-		index++;
-	}
-	return (count);
-}
+int	ft_count_if(char **tab, int length, int (*f)(char*));
 
 int	ft_is_first_x(char *str)
 {
