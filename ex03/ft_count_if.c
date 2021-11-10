@@ -12,7 +12,13 @@
 
 int	ft_count_if(char **tab, int length, int (*f)(char*))
 {
+	int	to_return;
+
 	if (length == 0)
 		return (0);
-	return (((*f)(tab[0]) != 0 ? 1 : 0) + ft_count_if(tab + 1, length - 1, f));
+	if ((*f)(tab[0]) != 0 )
+		to_return = 1;
+	else
+		to_return = 0;
+	return (to_return + ft_count_if(tab + 1, length - 1, f));
 }

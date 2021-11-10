@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_map.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ecaceres <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/16 11:22:59 by ecaceres          #+#    #+#             */
-/*   Updated: 2019/08/16 11:22:59 by ecaceres         ###   ########.fr       */
+/*   Created: 2021/11/09 23:52:59 by porrapat          #+#    #+#             */
+/*   Updated: 2021/11/09 23:53:55 by porrapat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 int	*ft_map(int *tab, int length, int (*f)(int));

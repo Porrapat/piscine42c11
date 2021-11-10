@@ -17,7 +17,8 @@ int	*ft_map(int *tab, int length, int (*f)(int))
 	int	index;
 	int	*results;
 
-	if (!(results = malloc(length * sizeof(int))))
+	results = malloc(length * sizeof(int));
+	if (!results)
 		return (NULL);
 	index = 0;
 	while (index < length)
